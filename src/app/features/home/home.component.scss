@@ -19,6 +19,7 @@
 
     &:hover {
       filter: brightness(0.5);
+      cursor: pointer;
     }
   }
 }
@@ -47,28 +48,40 @@
   background: #c6d3c9;
   display: flex;
   align-items: center;
-  justify-content: space-around;  
+  justify-content: space-around;    
 }
 
 .card {
-  width: 12em;
+  width: 13em;
   height: 12em;
   max-height: 300px;
   padding: auto;
-  text-align: center;
+  
+  align-items: center; 
   background: #66b5b8;
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 25px 25px 50px #1b1c1b;
 
   span {
+    margin-top: 6px !important;
+    display: flex;
+    justify-content: center;
     font-weight: 600;
+    
     color: var(--text-title);
   }
 
   img {
     width: 95%;
-    margin-top: 20px;
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 5px;  
   
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 300ms linear; 
   }
 }
